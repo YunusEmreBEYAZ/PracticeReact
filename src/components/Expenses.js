@@ -4,11 +4,11 @@ import "./Expenses.css"
 function Expenses(props) {
     return (
         <div className="expenses">
-            {props.expenses.map((expense) => (
+            {props.items.map((item) => (
                 <ExpenseItem
-                    title={expense.title}
-                    date={expense.date}
-                    amount={expense.amount} />
+                    title={item.title}
+                    date={item.date}
+                    amount={item.amount} />
             ))}
         </div>
     )
